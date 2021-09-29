@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family:'Nunito',sans-serif;
+    margin: 0;
+    width:100%;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 1.1em 1.6em;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+header section{
+    text-align: center;
+}
+section img{
+    width: 6.0em;
+}
+nav{
+    padding:1.1em 1.2em;
+    width:100%;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav li a{
+    text-align: center;
+    display: block;
+    color:#747373;
+    font-weight:600;
+    padding: 0.8em 1.0em;
+    font-size: 1.1rem;
+}
+nav li a:hover{
+    border-bottom:1px solid rgb(216, 215, 215);
+    color:#313131;
+}
+main{
+    background-image: url(../imagem/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+main .home{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1414142f;
+    padding: 1.2em 0;
+}
+.home div{
+    margin: 1.5em auto;
+    background-color:rgba(255, 255, 255, 0.897);
+    width: 80%;
+    text-align: center;
+    padding: 2.0em;
+    border: 1px solid rgba(194, 194, 194, 0.8);
+}
+div h1{
+    font-size: 2.5em;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 800;
+}
+div p{
+    margin: 1.5em 0;
+}
+div section{
+    background-color:none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+main section input{
+    padding: 1.5em 0.8em;
+    width:40.0em;
+    border:1px solid #cccc;
+
+}
+section button{
+    padding: 1.5em 1.2em;
+    width:15.0em;
+    background-color: orange;
+    border: 1px solid #ccc;
+    color:#ffff;
+    font-weight: 800;
+}
+section button:hover{
+    background-color:rgb(230, 152, 8);
+}
+.container{
+    margin: 0 auto;
+    padding-top:1.5em; 
+    width: 100%;
+}
+.sobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1.2em;
+}
+.sobre .info{
+    width:400px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+/* slide de imagem */
+.sobre .carrousel{
+    width:500px;
+    height:400px;
+    border:1px solid #cccc;
+    margin-left: 1.5em;
+    position: relative;
+    right:15px;
+}
+.sobre .carrousel img{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s;
+    object-fit: cover;
+}
+.sobre .carrousel .show{
+    opacity: 1;
+}
+.ofertas{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:2.5em 1.5em;
+}
+.ofertas div{
+    padding-bottom: 1.5em;
+    width:300px;
+    text-align: center;
+    border:1px solid rgba(204, 204, 204, 0.342);
+    transition:all 0.5s;
+    background: #ffff;
+}
+.ofertas div:hover{
+    transform: scale(1.1);
+}
+.ofertas div img{
+    width:100%;
+    height: 60%;
+    object-fit: cover;
+}
+.ofertas figcaption{
+    padding: 1.5em 0;
+}
+figcaption h3{
+    font-weight:600;
+    font-size:1.3em;
+}
+figcaption p{
+    font-weight:900;
+    font-size: 1.3em;
+    color:green
+}
+.contato{
+    text-align: center;
+    padding:1.8em 0;
+    background-color: rgba(165, 52, 52, 0.767);
+    width: 100%;
+}
+.contato h2{
+    font-weight: 700;
+    font-size: 2.0em;
+    margin: 1.2em 0;
+    color:#ffff;
+
+}
+.contato input{
+    margin-bottom: 1.5em;
+    width:70%;
+}
+.contato div a i{
+    color:rgb(48, 207, 48);
+    font-size:2.0em;
+    margin-top: 1.4em;
+    transition: all 0.4s;
+}
+.contato div a i:hover{
+    transform: scale(1.2);
+}
+footer{
+    width:100%;
+    padding:1.5em 0;
+    position: absolute;
+    text-align: center;
+    font-weight:700;
+}
+@media screen and (min-width:800px) {
+    .contato input{
+        width:60%;
+        margin-bottom: 2.0em;
+    }
+}
