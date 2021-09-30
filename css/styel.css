@@ -2,14 +2,11 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family:'Nunito',sans-serif;
 }
 html,body{
     height: 100%;
-}
-body{
-    font-family:'Nunito',sans-serif;
-    margin: 0;
-    width:100%;
+    min-width:300px;
 }
 ul,li{
     list-style: none;
@@ -18,9 +15,9 @@ a{
     text-decoration: none;
 }
 header{
-    padding: 1.1em 1.6em;
     width: 100%;
     border-bottom: 1px solid #ccc;
+    padding:30px 0;
 }
 header section{
     text-align: center;
@@ -29,20 +26,20 @@ section img{
     width: 6.0em;
 }
 nav{
-    padding:1.1em 1.2em;
+    margin-top:12px;
     width:100%;
 }
 nav ul{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 nav li a{
-    text-align: center;
-    display: block;
-    color:#747373;
-    font-weight:600;
-    padding: 0.8em 1.0em;
+    display: inline-block;
+    color:#141414;
+    font-weight:700 ;
     font-size: 1.1rem;
+    padding: 0 10px;
 }
 nav li a:hover{
     border-bottom:1px solid rgb(216, 215, 215);
@@ -57,29 +54,30 @@ main{
     width: 100%;
 }
 main .home{
-    display: block;
     width: 100%;
     height: 100%;
     background-color: #1414142f;
-    padding: 1.2em 0;
+    padding-top:15px;
 }
+
 .home div{
     margin: 1.5em auto;
     background-color:rgba(255, 255, 255, 0.897);
-    width: 80%;
+    width: 90%;
     text-align: center;
-    padding: 2.0em;
+    padding: 1.5em;
     border: 1px solid rgba(194, 194, 194, 0.8);
 }
-div h1{
+main div h1{
     font-size: 2.5em;
     font-family: 'Roboto',sans-serif;
     font-weight: 800;
 }
-div p{
-    margin: 1.5em 0;
+main div p{
+    padding: 40px 5px;
+    font-weight: 550;
 }
-div section{
+main div section{
     background-color:none;
     display: flex;
     flex-wrap: wrap;
@@ -90,22 +88,21 @@ main section input{
     padding: 1.5em 0.8em;
     width:40.0em;
     border:1px solid #cccc;
-
 }
 section button{
     padding: 1.5em 1.2em;
     width:15.0em;
-    background-color: orange;
+    background-color:orange;
     border: 1px solid #ccc;
     color:#ffff;
     font-weight: 800;
 }
 section button:hover{
-    background-color:rgb(230, 152, 8);
+    background-color:rgb(241, 171, 41);
 }
 .container{
-    margin: 0 auto;
-    padding-top:1.5em; 
+    margin:0 auto;
+    margin-top:50px;
     width: 100%;
 }
 .sobre{
@@ -171,7 +168,7 @@ figcaption h3{
 }
 figcaption p{
     font-weight:900;
-    font-size: 1.3em;
+    font-size: 1.5em;
     color:green
 }
 .contato{
@@ -203,11 +200,13 @@ figcaption p{
 footer{
     width:100%;
     padding:1.5em 0;
-    position: absolute;
     text-align: center;
     font-weight:700;
 }
-@media screen and (min-width:800px) {
+@media screen and (max-width:870px) {    
+    section button{
+        margin-top: 15px;
+    }
     .contato input{
         width:60%;
         margin-bottom: 2.0em;

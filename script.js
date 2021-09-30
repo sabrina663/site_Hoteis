@@ -2,7 +2,6 @@ let time = 2000; index = 0;
 
 function slide(){
     let imagem = document.querySelectorAll('#carrousel img');maxIndex = imagem.length;
-    console.log(imagem)
     imagem[index].classList.remove('show')
     index ++
     if(index >= maxIndex){
